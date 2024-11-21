@@ -30,7 +30,7 @@ navItems.forEach((item) => {
 
 // --- 3. Conexión a API ---
 const weatherInfo = document.getElementById("weather-info");
-const API_KEY = "tu_api_key_aqui"; // Inserta tu API key de OpenWeather
+const API_KEY = "https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}"; // Inserta tu API key de OpenWeather
 const city = "Bogotá"; // Cambia a tu ciudad
 
 async function fetchWeather() {
