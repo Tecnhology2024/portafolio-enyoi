@@ -91,3 +91,18 @@ header nav ul li a:hover {
     right: 20px;
     top: 10px;
 }
+/* Ajustar tamaño de la imagen */
+.profile-image {
+    width: 150px; /* Cambia este valor según lo que necesites */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 50%; /* Para hacerla circular, opcional */
+    display: block; /* Centrado más fácil */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+/* Opcional: Control de tamaño en dispositivos pequeños */
+@media (max-width: 768px) {
+    .profile-image {
+        width: 100px; /* Redimensionar en pantallas pequeñas */
+    }
+}
