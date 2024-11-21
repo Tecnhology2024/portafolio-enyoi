@@ -1,4 +1,4 @@
-// script.js
+// script.js 
 
 // --- 1. Modales ---
 document.getElementById("open-modal").addEventListener("click", function () {
