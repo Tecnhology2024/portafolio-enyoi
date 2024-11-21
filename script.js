@@ -1,18 +1,28 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const navLinks = document.querySelectorAll('nav a[href^="#"]');
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
 
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            
-            const targetId = link.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
-            
-            if (targetSection) {
-                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            } else {
-                console.warn(` id="about" class="section">: ${targetId}`);
-            }
-        });
-    });
-});
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    text-align: center;
+}
+
+.close {
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
