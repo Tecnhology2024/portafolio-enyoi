@@ -40,9 +40,9 @@ async function fetchWeather() {
         );
         const data = await response.json();
         weatherInfo.textContent = `El clima en ${data.name}: ${data.main.temp}°C, ${data.weather[0].description}`;
-    } catch (error) {
-        weatherInfo.textContent = "No se pudo cargar el clima.";
-        console.error("Error al obtener el clima:", error);
+    } catch (Location) {
+        weatherInfo.textContent = "cargar el clima.";
+        console.error("obtener el clima:", Location);
     }
 }
 
